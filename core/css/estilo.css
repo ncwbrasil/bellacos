@@ -1,0 +1,1009 @@
+/* #region PADRÃO*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&display=swap');
+body {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: table;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 16px !important;
+    color: #585757;
+    background-color: white;
+    font-weight: 500 !important;
+}
+
+p {
+    margin: 0 !important;
+    line-height: 30px;
+}
+
+.bt-whats {
+    position: fixed;
+    right: 0%;
+    width: 60px;
+    z-index: 9999999999;
+    height: 60px;
+    border-radius: 15% 0 0 18%;
+    background: #657D80;
+    text-align: center;
+    top: 59%;
+}
+
+.bt-whats i {
+    font-size: 40px;
+    color: #fff;
+    line-height: 60px;
+}
+
+.wrapper {
+    width: 1200px;
+    display: table;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1550px) {
+    .wrapper {
+        width: 90%;
+    }
+}
+
+.bloco_l {
+    width: 48%;
+    float: left;
+}
+
+.bloco_r {
+    width: 48%;
+    float: right;
+}
+
+@media screen and (max-width: 950px) {
+    .bloco_l {
+        width: 100% !important;
+    }
+    .bloco_r {
+        width: 100% !important;
+    }
+}
+
+.titulo {
+    text-align: left;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.titulo2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.subtitulo {
+    text-align: center;
+}
+
+.subtitulo2 {
+    text-align: left;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: #7f7f7f;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    font-size: 20px;
+}
+
+form {
+    padding: 40px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+::-webkit-input-placeholder {
+    color: #A6A8AB;
+    font-family: "Montserrat Regular", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding-left: 2px;
+}
+
+:-moz-placeholder {
+    color: #585757;
+    font-family: "Montserrat Regular", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding-left: 2px;
+}
+
+::-moz-placeholder {
+    color: #585757;
+    font-family: "Montserrat Regular", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding-left: 2px;
+}
+
+:-ms-input-placeholder {
+    color: #585757;
+    font-family: "Montserrat Regular", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding-left: 2px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type='search'],
+input[type='email'],
+textarea {
+    border: none;
+    border: 1px solid #A6A8AB;
+    color: #585757;
+    font-family: "Montserrat Regular", sans-serif;
+    font-size: 17px;
+    width: 100%;
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+
+input[type='submit'] {
+    margin-top: 20px;
+    float: right;
+    background: #657D80;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+table {
+    width: 100%;
+}
+
+tr th,
+tr td {
+    border: 1px solid #657D80;
+    text-align: center;
+    padding: 2px;
+}
+
+tr th {
+    color: #fff;
+    background: #657D80;
+    border: 1px solid #fff;
+}
+
+input[type='text'],
+input[type='email'] {
+    width: 100%;
+    display: table;
+    padding: 10px 5px;
+    margin-bottom: 20px;
+}
+
+label {
+    text-align: left !important;
+    width: 100%;
+    float: left;
+}
+
+#form {
+    margin: 0 auto;
+    display: table;
+    padding: 0;
+    width: 100%;
+}
+
+.confirmacao {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 13%;
+    background: #657D80;
+    padding: 100px;
+    min-height: 300px;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+}
+
+.confirmacao button {
+    margin-top: 30px;
+    color: #657D80;
+    background: #fff;
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: none;
+}
+
+.confirmacao a {
+    color: #fff;
+    transition: 0.3s;
+}
+
+.confirmacao a:hover {
+    color: #ccc;
+}
+
+.verde {
+    color: #657D80;
+}
+
+.marrom {
+    color: #645040;
+}
+
+@media screen and (max-width:500px) {
+    table {
+        overflow: scroll;
+    }
+}
+
+
+/* #endregion */
+
+
+/* #region TOPO */
+
+.topo {
+    margin-bottom: 30px;
+    width: 100%;
+    display: table;
+}
+
+.topo .faixa {
+    width: 100%;
+    background-color: #F0F0F0;
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.bloco_info {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 31px;
+    align-items: center;
+    color: #657D80;
+}
+
+.bloco_info a {
+    color: #657D80;
+}
+
+.btn-vendas {
+    margin-right: 21px;
+    border-radius: 30px;
+    width: 174px;
+    font-size: 17px;
+    color: #657D80;
+    border: 1px solid #657D80;
+}
+
+.icon-info {
+    font-size: 22px;
+    margin: 0 8px;
+    color: #657D80;
+}
+
+.face-info {
+    border-left: 1px solid #657D80;
+    padding-left: 29px;
+}
+
+.topo #topo {
+    width: 1200px;
+    display: table;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.topo #topo .logo {
+    width: 35%;
+    float: left;
+}
+
+.topo #topo .logo .imglogo {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 5px;
+    margin: 0 auto;
+    display: table;
+}
+
+.topo .busca {
+    width: 690px;
+    float: left;
+    margin-top: -60px;
+}
+
+.topo .busca input[type='text'] {
+    width: 97%;
+    float: left;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    outline: none;
+    border-radius: 0;
+}
+
+.topo .busca button {
+    width: 80px;
+    float: right;
+    padding: 10px 0;
+    background: none;
+    position: relative;
+    z-index: 99999999;
+    margin-top: -55px;
+    border: none;
+}
+
+.menu {
+    width: 700px;
+    float: left;
+    display: table;
+    margin-top: -15px;
+}
+
+.bn_top {
+    width: 100%;
+    display: table;
+    padding: 70px 0;
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+    height: 240px;
+}
+
+.bn_top .titulo {
+    text-align: center;
+}
+
+@media screen and (max-width: 1250px) {
+    .bloco_info {
+        justify-content: center;
+        padding: 0px;
+    }
+    .btn-vendas {
+        font-size: 13px;
+        line-height: 23px;
+        width: 163px;
+    }
+    .topo #topo,
+    .topo #topo .logo,
+    .menu {
+        width: 100%;
+        margin: 0 auto;
+        float: none;
+        display: table;
+    }
+    .topo #topo .busca {
+        width: 90%;
+        margin: 0 auto;
+        float: none;
+        display: table;
+    }
+    .topo .busca input[type='text'] {
+        width: 100%;
+    }
+    .topo #topo {
+        margin-top: 20px;
+    }
+}
+
+
+/* #endregion */
+
+
+/* #region CAROUSEL */
+
+.container {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: url('../imagens/banner-rotativo.png') center center no-repeat !important;
+    height: 25vw;
+}
+
+.carousel-inner {
+    height: 25vw;
+}
+
+.carousel-inner .item {
+    height: 25vw;
+}
+
+@media screen and (max-width:850px) {
+    .container,
+    .carousel-inner,
+    .carousel-inner .item {
+        height: 300px;
+    }
+}
+
+.img-carousel {
+    width: 100% !important;
+}
+
+.textocarousel {
+    display: flex !important;
+    align-items: center !important;
+    position: absolute !important;
+    z-index: 9999999999 !important;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    line-height: 4vw;
+    text-align: center;
+}
+
+.textocarousel .txt-carousel {
+    color: #657D80;
+    font-size: 4vw;
+    font-weight: bold;
+}
+
+.textocarousel .txt-carousel2 {
+    color: white;
+    font-size: 2.5vw;
+    font-weight: bold;
+}
+
+.carousel-control {
+    text-decoration: none;
+}
+
+@media screen and (max-width:1000px) {
+    .textocarousel {
+        line-height: 5vw;
+    }
+    .textocarousel .txt-carousel {
+        font-size: 5vw;
+    }
+    .textocarousel .txt-carousel2 {
+        font-size: 3vw;
+    }
+    .carousel-control {
+        display: none;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .textocarousel {
+        line-height: 7vw;
+    }
+    .textocarousel .txt-carousel {
+        font-size: 7vw;
+    }
+    .textocarousel .txt-carousel2 {
+        font-size: 4.5vw;
+    }
+}
+
+
+/* #endregion */
+
+
+/* #region CONTEUDO */
+
+.espaco {
+    height: 150px;
+    width: 100%
+}
+
+.div-icone {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999999;
+    margin-bottom: 100px;
+    height: 0%;
+}
+
+.div-icone .icone {
+    width: 13%;
+}
+
+.div-linhas {
+    width: 100%;
+    display: table;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.div-linhas .div-card {
+    display: flex;
+    justify-content: center;
+    width: 97%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.card {
+    padding: 20px;
+}
+
+.imgcard {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.contato {
+    background-color: #F0F0F0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0;
+}
+
+.contato .icon-contato {
+    color: #657D80;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 980px) {
+    .contato {
+        text-align: center;
+    }
+    .div-linhas .div-card {
+        flex-direction: column;
+        width: 70%;
+    }
+    .div-icone .icone {
+        width: 15%;
+    }
+    .espaco {
+        height: 70px
+    }
+}
+
+@media screen and (max-width:590px) {
+    .div-linhas .div-card {
+        width: 80%;
+    }
+    .div-icone .icone {
+        width: 20%;
+    }
+}
+
+
+/* #endregion */
+
+
+/* #region RODAPE*/
+
+.rodape {
+    width: 100%;
+    background: url("../imagens/rodape.jpg") no-repeat center;
+    background-size: cover;
+    height: 256px;
+}
+
+.icon-rodape {
+    font-size: 25px;
+    margin: 0 8px;
+    color: white;
+}
+
+.rodape #rodape {
+    color: white;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.div-rodape {
+    height: 47%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rodape .menu_rodape {
+    width: 57%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    font-size: 20px;
+    padding: 0;
+    margin-bottom: 39px;
+}
+
+.rodape ul li {
+    text-align: center;
+    width: 22%
+}
+
+.rodape ul li a {
+    font-size: 18px;
+    color: white;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+}
+
+.rodape .texto {
+    display: flex;
+    font-size: 18px;
+    align-items: center
+}
+
+#copy p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+}
+
+#copy a {
+    justify-content: flex-end;
+    display: flex;
+    width: 56%;
+}
+
+@media screen and (max-width:950px) {
+    .rodape {
+        height: 316px;
+        text-align: center;
+    }
+    .rodape .menu_rodape {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 32px;
+        margin-top: 20px;
+    }
+    .rodape ul li {
+        justify-content: center;
+        width: 100%;
+        display: flex;
+    }
+    .rodape ul li a {
+        font-size: 22px;
+    }
+    .div-rodape {
+        height: 60%;
+        justify-content: center;
+    }
+    #copy {
+        height: 35%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+    }
+    #copy a {
+        display: flex;
+        justify-content: center
+    }
+}
+
+
+/* #endregion */
+
+
+/*#region PRODUTOS*/
+
+#produtos {
+    padding: 50px 0;
+}
+
+#produtos .bloco {
+    width: 48%;
+    float: left;
+    display: table;
+    margin: 1%;
+    height: 400px;
+    border-radius: 15px;
+}
+
+#produtos .bobina {
+    width: 31%;
+    float: left;
+    display: table;
+    margin: 1%;
+    text-align: center;
+}
+
+#produtos img {
+    width: 100%;
+}
+
+#produtos .categoria {
+    text-align: left;
+    width: 98%;
+    padding: 10px 1%;
+    border-bottom: 1px solid #657D80;
+    display: table;
+}
+
+#produtos .categoria h3 {
+    font-weight: 700;
+    color: #657D80;
+}
+
+#produtos .subcategoria,
+#produtos .produto {
+    width: 23%;
+    float: left;
+    margin: 1%;
+    display: table;
+    padding: 30px;
+    color: #585757;
+    text-align: left;
+    font-size: 21px;
+    font-weight: 400;
+    height: 210px;
+    position: relative;
+    background: #f3f3f3;
+    border-radius: 15px;
+    border: 2px solid #657D80;
+}
+
+#produtos .imagem {
+    width: 90px;
+    right: 10px;
+    bottom: 10px;
+    position: absolute;
+}
+
+@media screen and (max-width:1150px) {
+    #produtos .subcategoria,
+    #produtos .produto {
+        width: 31%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    #produtos .subcategoria,
+    #produtos .produto {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:540px) {
+    #produtos .subcategoria,
+    #produtos .produto {
+        width: 98%;
+    }
+}
+
+#produtos .categorias {
+    width: 25%;
+    float: left;
+}
+
+#produtos .categorias ul {
+    margin: 0 auto;
+    padding: 0;
+    display: table;
+    width: 100%;
+}
+
+#produtos .categorias ul li,
+#produtos .categorias ul li ul li {
+    padding: 0;
+    padding: 8px;
+    text-align: left;
+    margin: 0 auto;
+    list-style: none;
+    background: #f1f1f1;
+    color: #657D80;
+    margin: 5px 0;
+    line-height: 20px;
+    font-size: 20px;
+}
+
+#produtos .categorias ul li ul li {
+    background: #f9f9f9;
+    margin: 0 auto;
+    border-bottom: 1px solid #657D80;
+    display: none;
+}
+
+#produtos .categorias i {
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+#produtos .subgrupo {
+    width: 100%;
+    display: table;
+    padding: 5px 0 5px 20px;
+    background: #f1f1f1;
+    margin: 20px auto;
+}
+
+#produtos .descricao {
+    width: 65%;
+    float: left;
+}
+
+#produtos .form_produto {
+    width: 31%;
+    float: right;
+    padding: 1%;
+    background: #e9e9e9;
+    color: #657D80;
+    text-align: center;
+}
+
+@media screen and (max-width:1100px) {
+    #produtos .descricao {
+        width: 100%;
+    }
+    #produtos .form_produto {
+        width: 100%;
+        margin-top: 40px;
+    }
+}
+
+
+/*#endregion*/
+
+
+/*#region SOBRE NÓS*/
+
+#sobre {
+    padding: 50px 0;
+}
+
+#sobre .bloco {
+    width: 30%;
+    margin: 1.5%;
+    float: left;
+    display: table;
+    text-align: center;
+    height: 200px;
+    padding: 20px;
+    border-radius: 15px;
+    background: #ebdfcf;
+    color: #645040;
+}
+
+@media screen and (max-width:1000px) {
+    #sobre .bloco {
+        width: 97%;
+    }
+}
+
+
+/*#endregion*/
+
+
+/*#region CONTATO*/
+
+#contato {
+    padding: 50px 0;
+}
+
+#contato .bloco {
+    width: 30%;
+    margin: 1.5%;
+    float: left;
+    display: table;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 15px;
+    background-color: #657D80;
+    color: #fff;
+    font-size: 20px;
+}
+
+#contato .bloco i {
+    font-size: 30px;
+}
+
+#contato .bloco_l,
+#contato .bloco_r {
+    text-align: left;
+    margin: 0 auto;
+    display: table;
+    height: 300px;
+    margin: 40px 0;
+}
+
+.contatos {
+    width: 100%;
+    display: table;
+}
+
+@media screen and (max-width:1160px) {
+    #contato .bloco {
+        font-size: 15px;
+        padding: 20px 10px;
+    }
+}
+
+@media screen and (max-width:950px) {
+    #contato .bloco_l,
+    #contato .bloco_r {
+        margin: 0 auto;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:840px) {
+    #contato .bloco {
+        width: 100%;
+        margin: 10px auto;
+    }
+}
+
+
+/*#endregion*/
+
+
+/* #region JANELA */
+
+.janela {
+    height: 500px;
+    font-weight: 300;
+    color: #fff;
+    width: 400px;
+    overflow: hidden;
+    background-color: none;
+    border: none;
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    z-index: 999999;
+}
+
+.janela input {
+    position: relative;
+    float: none;
+    color: #fff;
+    background: #657D80;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+#mask {
+    display: none;
+    background: #000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 150;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: 90;
+}
+
+
+/* #endregion */
